@@ -1,5 +1,7 @@
 name: Node.js CI 
 
+ 
+
 on: 
   push: 
     branches: 
@@ -33,10 +35,10 @@ jobs:
 
       - name: Install dependencies 
         run: | 
-          yarn install  # or npm install 
+          npm install 
 
  
 
       - name: Run tests 
         run: | 
-          yarn test  # or npm test
+          npm test
